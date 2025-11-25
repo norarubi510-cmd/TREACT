@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/6487f0a3d4.js"
       crossorigin="anonymous"
@@ -23,15 +23,15 @@
               width="400"
               height="120"
             />
-            <ul class="nav_links">
-              <a href="#" class="nav_link">About</a>
-              <a href="#" class="nav_link">Blog</a>
-              <a href="#" class="nav_link">Pricing</a>
-              <a href="#" class="nav_link">Contact Us</a>
-              <a href="#" class="nav_link">Login</a>
-              <a href="#" class="nav_link nav_link--primary">Sign Up</a>
-            </ul>
           </div>
+          <ul class="nav_links">
+            <li><a href="#" class="nav_link">About</a></li>
+            <li><a href="#" class="nav_link">Blog</a></li>
+            <li><a href="#" class="nav_link">Pricing</a></li>
+            <li><a href="#" class="nav_link">Contact Us</a></li>
+            <li><a href="#" class="nav_link">Login</a></li>
+            <li><a href="#" class="nav_link nav_link--primary">Sign Up</a></li>
+          </ul>
         </div>
       </nav>
       <header>
@@ -49,24 +49,24 @@
               <input
                 type="text"
                 class="header_email--input"
-                placholder="Your E-mail Address"
+                placeholder="Your E-mail Address"
               />
-              <button class="header_email--btn">
-                Get Started
-              </button>
+              <button class="header_email--btn">Get Started</button>
             </div>
             <p class="header-customers--title">OUR TRUSTED CUSTOMERS</p>
             <img
               src="https://mifouts.github.io/Treact-Template/assets/customers-logo-strip.680ac7c2.png"
+              alt="trusted customers"
               class="header_customers"
             />
-            <figure class="header_img--wrapper">
-              <img
-                src="./assets/undraw_winter-designer_a6kq.svg"
-                class="header_img"
-              />
-            </figure>
           </div>
+          <figure class="header_img--wrapper">
+            <img
+              src="./assets/undraw_winter-designer_a6kq.svg"
+              alt="designer illustration"
+              class="header_img"
+            />
+          </figure>
         </div>
       </header>
     </section>
@@ -91,7 +91,9 @@
                     <figure class="feature_img--wrapper">
                       <img
                         src="./assets/shield-solid-full.svg"
-                        class="feature_img">
+                        alt="Secure"
+                        class="feature_img"
+                      />
                     </figure>
                     <div class="feature_text">
                       <h2 class="feature_title">Secure</h2>
@@ -108,6 +110,7 @@
                     <figure class="feature_img--wrapper">
                       <img
                         src="./assets/headset-solid-full.svg"
+                        alt="24/7 Support"
                         class="feature_img"
                       />
                     </figure>
@@ -126,6 +129,7 @@
                     <figure class="feature_img--wrapper">
                       <img
                         src="./assets/sliders-solid-full.svg"
+                        alt="Customizable"
                         class="feature_img"
                       />
                     </figure>
@@ -144,6 +148,7 @@
                     <figure class="feature_img--wrapper">
                       <img
                         src="./assets/up-down-solid-full.svg"
+                        alt="Reliable"
                         class="feature_img"
                       />
                     </figure>
@@ -162,6 +167,7 @@
                     <figure class="feature_img--wrapper">
                       <img
                         src="./assets/bolt-solid-full.svg"
+                        alt="Fast"
                         class="feature_img"
                       />
                     </figure>
@@ -200,30 +206,31 @@
       </section>
 
       <section id="quality">
-          <div class="container">
-              <div class="row">
-                 <div class="quality_description">
-                     <div class="section_tag">QUALITY WORK</div>
-                     <h2 class="section_title">
-                      Designed & Developed by
-                     <span class="vivid blue"> Professionals.</span>
-                     </h2>
-                     <p class="section_para">
-                      Our team of experienced designers and developers are passionate
-                      about creating high-quality templates that meet the needs of
-                      modern businesses. We take pride in our work and are committed
-                      to delivering exceptional results for our clients.
-                      </p>
-                     <button class="btn">Learn More</button>
-                  </div>
-                 <figure class="quality_img--wrapper">
-                 <img
-                  src="./assets/undraw_web-devices_i15y.svg"
-                  class="quality_img"
-                  />
-                  </figure>
-               </div>
+        <div class="container">
+          <div class="row">
+            <div class="quality_description">
+              <div class="section_tag">QUALITY WORK</div>
+              <h2 class="section_title">
+                Designed & Developed by
+                <span class="vivid blue"> Professionals.</span>
+              </h2>
+              <p class="section_para">
+                Our team of experienced designers and developers are passionate
+                about creating high-quality templates that meet the needs of
+                modern businesses. We take pride in our work and are committed
+                to delivering exceptional results for our clients.
+              </p>
+              <button class="btn">Learn More</button>
             </div>
+            <figure class="quality_img--wrapper">
+              <img
+                src="./assets/undraw_web-devices_i15y.svg"
+                alt="web devices"
+                class="quality_img"
+              />
+            </figure>
+          </div>
+        </div>
       </section>
       <section id="steps">
         <div class="container">
@@ -269,187 +276,324 @@
           </div>
         </div>
       </section>
+
       <section id="values">
-          <div class="container">
-              <div class="row">
-                  <div class="values_description">
-                       <div class="section_tag">VALUES</div>
-                       <h2 class="section_title">We Always Abide by Our
-                       <span class="vivid blue">Principles.</span>
-                       </h2>
-                       <div class="section_para">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia perspiciatis laborum quas 
-                         doloribus cupiditate atque quam, eveniet debitis consectetur enim, neque velit laudantium, consequuntur eligendi quod dicta tempore cum?
-                       </div>
-                       <div class="values_list">
-                          <div class="value">
-                              <div class="value_title">
-                                  <figure class="value_img--wrapper">
-                                    <img src="./assets/dollar-sign (1).svg"  class="value_img"/>
-                                  </figure>
-                                  <div class="value_name">Affordable</div>
-                              </div>
-                              <div class="value_para">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellat provident placeat minima 
-                                fugit ex incidunt libero vitae nesciunt voluptatibus enim impedit ullam dolorem cumque qui totam natus sint facere nisi, reiciendis maiores, eveniet fugiat. Reprehenderit, id tempora. Ipsum, sapiente.
-                              </div>
-                          </div>
-                          <div class="value">
-                             <div class="value_title">
-                                  <figure class="value_img--wrapper">
-                                  <img src="./assets/briefcase.svg"  class="value_img"/>
-                                  </figure>
-                                  <div class="value_name">Professionalism</div>
-                                  <div class="value_para">
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed ullam molestiae 
-                                   eveniet ratione dicta, et doloremque a adipisci, quas laborum culpa tempora itaque eligendi similique sapiente accusamus natus quaerat neque odio aut officiis! Cum dicta dolore tenetur velit dignissimos?</div>                   </div>
-                                 </div>
-                              </div>
-                           </div>
-                       </div>
-                       <button class="btn">Learn More</button>
+        <div class="container">
+          <div class="row">
+            <div class="values_description">
+              <div class="section_tag">VALUES</div>
+              <h2 class="section_title">
+                We Always Abide by Our
+                <span class="vivid blue">Principles.</span>
+              </h2>
+              <div class="section_para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                officia perspiciatis laborum quas doloribus cupiditate atque
+                quam, eveniet debitis consectetur enim, neque velit laudantium,
+                consequuntur eligendi quod dicta tempore cum?
+              </div>
+              <div class="values_list">
+                <div class="value">
+                  <div class="value_title">
+                    <figure class="value_img--wrapper">
+                      <img
+                        src="./assets/dollar-sign (1).svg"
+                        alt="Affordable"
+                        class="value_img"
+                      />
+                    </figure>
+                    <div class="value_name">Affordable</div>
                   </div>
-                  <img class="values_img" src="./assets/undraw_prototyping-process_1thp.svg">
-                
+                  <p class="value_para">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repudiandae repellat provident placeat minima fugit ex
+                    incidunt libero vitae nesciunt voluptatibus enim impedit
+                    ullam dolorem cumque qui totam natus sint facere nisi,
+                    reiciendis maiores, eveniet fugiat. Reprehenderit, id
+                    tempora. Ipsum, sapiente.
+                  </p>
+                </div>
+                <div class="value">
+                  <div class="value_title">
+                    <figure class="value_img--wrapper">
+                      <img
+                        src="./assets/briefcase.svg"
+                        alt="Professionalism"
+                        class="value_img"
+                      />
+                    </figure>
+                    <div class="value_name">Professionalism</div>
+                  </div>
+                  <p class="value_para">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Minima sed ullam molestiae eveniet ratione dicta, et
+                    doloremque a adipisci, quas laborum culpa tempora itaque
+                    eligendi similique sapiente accusamus natus quaerat neque
+                    odio aut officiis! Cum dicta dolore tenetur velit
+                    dignissimos?
+                  </p>
+                </div>
+              </div>
+              <button class="btn">Learn More</button>
             </div>
-        </section>
-        <section id="pricing">
-            <div class="container">
-                <div class="row">
-                    <div class="section_tag">pricing</div>
-                    <h2 class="section_title">
-                        Reasonable & Flexible
-                    <span class="vivid blue"> Plans.</span>
-                   </h2>
-                   <p class="section_para"> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam quas earum deleniti ratione 
-                    ab blanditiis, laudantium amet corrupti sunt omnis, voluptas, inventore beatae fuga. Sed saepe minus ullam explicabo aut cum quam, mollitia nihil.
-                   </p>
-                   <div class="plans">
-                      <div class="plan">
-                            <div class="plan_stripe"></div>
-                            <div class="plan_top"></div>
-                            <div class="plan_name">PERSONAL</div>
-                            <div class="plan_price">$17.99</div>
-                            <div class="plan_duration">MONTHLY</div>
-                      </div>
-                      <div class="plan_middle">
-                            <div class="plan_target">For Individuals</div>
-                            <div class="plan_feature">30 Templates</div>
-                            <div class="plan_feature">7 Landing Pages</div>
-                            <div class="plan_feature">12 Internal Pages</div>
-                            <div class="plan_feature">Basic Assistance</div>
-                       </div>
-                       <button class="plan_bottom">
-                            <div class="plan_button">buy now</button>
-                       </div>
-                       </div>
-                       <div class="plan">
-                           <div class="plan_stripe"></div>
-                           <div class="plan_top"></div>
-                               <div class="plan_name">BUSINESS</div>
-                               <div class="plan_price">$37.99</div>
-                               <div class="plan_duration">MONTHLY</div>
-                           </div>
-                           <div class="plan_middle">
-                              <div class="plan_target">For Small Companies</div>
-                              <div class="plan_feature">90 Templates</div>
-                              <div class="plan_feature">27 Landing Pages</div>
-                              <div class="plan_feature">Personal Assistance</div>
-                           </div>
-                           <button class="plan_bottom">
-                              <div class="plan_button">buy now</button>
-                           </div>
-                           <div class="plan">
-                                 <div class="plan_stripe"></div>
-                                 <div class="plan_top"></div>
-                                 <div class="plan_name">ENTERPRISE</div>
-                                 <div class="plan_price">$57.99</div>
-                                 <div class="plan_duration">MONTHLY</div>
-                           </div>
-                           <div class="plan_middle">
-                                 <div class="plan_target">For Large Companies</div>
-                                 <div class="plan_feature">90 Templates</div>
-                                 <div class="plan_feature">27 Landing Pages</div>
-                                 <div class="plan_feature">37 Internal Pages</div>
-                                 <div class="plan_feature">Personal Assistance</div>
-                           </div>
-                           <button class="plan_bottom">
-                                 <div class="plan_button">buy now</button>
-                           </div>
-                           </section>
-                          <section id="testimonials">
-                              <div class="container">
-                                 <div class="row">
-                                      <img src="./assets/undraw_testimonials_4c7y.svg" alt class="testimonials_img"/>
-                                      <div class="testimonials_description">
-                                        <div class="section_tag">TESTIMONIALS</div>
-                                         <h2 class="section_title">
-                                              Our Clients
-                                             <span class="vivid blue">Love Us.</span>
-                                         </h2>
-                                         <p class="section_para">
-                                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ut voluptates fuga nulla aliquam fugit 
-                                           voluptatum sunt adipisci? Numquam est amet obcaecati corrupti laudantium quasi sed nesciunt voluptatibus tempora quam? Dolor animi obcaecati odio perspiciatis impedit magnam. Expedita, minima alias!
-                                         </p>
-                                        <div class="testimonial">
-                                           <div class="testimonials_rating">
-                                               <i class="fas fa-star" aria-hidden="true">
-                                               </i>
-                                               <i class="fas fa-star" aria-hidden="true">
-                                               </i>
-                                               <i class="fas fa-star" aria-hidden="true">
-                                               </i>        
-                                               <i class="fas fa-star" aria-hidden="true">
-                                               </i>
-                                               <i class="fas fa-star" aria-hidden="true">       
-                                               </i>
-                                           </div>
-                                           <h3 class="testimonial_title">Amazing User Experience</h3>
-                                           <p class="testimonial_para">
-                                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit neque aperiam quisquam eaque fuga vitae vero consequatur, et error dolores, ut eos ipsum porro ea
-                                              repudiandae voluptatum reprehenderit maiores quod corrupti, cum iste tempore optio! Deleniti, voluptate neque. Totam tempore, ipsum at cupiditate nam voluptates, facere hic
-                                              mollitia est beatae maiores esse ipsa accusantium exercitationem aspernatur adipisci optio nemo labore a voluptatibus. Iure pariatur eos quaerat magni qui, illum recusandae atque. Perferendis neque adipisci explicabo, sed odio voluptas quasi.
-                                           </p>
-                                           <div class="testimonials_bottom">
-                                               <div class="testimonials_profile">
-                                                    <img src="./assets/abbat-DQVVWzqnDg0-unsplash.jpg" class="testimonial_img">
-                                                 <div class="testimonial_details">
-                                                     <div class="testimonial_name">Isabella Morgan</div>
-                                                     <div class="testimonial_role">CEO, BellaCosmetics ©</div>
-                                                 </div>
-                                              </div>
-                                              <div class="testimonial_buttons">
-                                                  <div class="nav-container">
-                                                     <button class="btn-circle" id="prevBtn">←</button>
-                                                     <div class="divider"></div>
-                                                     <button class="btn-circle" id="nextBtn">→</button>
-                                                 </div>
-                                               </div>
-                                            </div>
-                                       </div>
-                                   </div>
-                               </div>
-                             <section id="start">
-                             <div class="container">
-                                 <div class="row">
-                                     <div class="start_container">
-                                         <div class="start_row">
-                                              <div class="start_title">
-                                                 Developers all over the world are happily using Venture Templates.
-                                              </div>
-                                              <div class="start_buttons">
-                                                  <button class="btn btn--primary btn--large">Get Started</button>
-                                                  <button class="btn btn--large">Contact Us</button>
-                                               </div>
-                                          </div>
-                                      </div>
-                                   </div>
-                              </div>
-                          </section>
-                  
-              
-        
+            <img
+              class="values_img"
+              src="./assets/undraw_prototyping-process_1thp.svg"
+              alt="prototyping process"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="container">
+          <div class="row">
+            <div class="row row_column">
+            <div class="section_tag">PRICING</div>
+            <h2 class="section_title">
+              Reasonable & Flexible
+              <span class="vivid blue"> Plans.</span>
+            </h2>
+            <p class="section_para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              ipsam quas earum deleniti ratione ab blanditiis, laudantium amet
+              corrupti sunt omnis, voluptas, inventore beatae fuga. Sed saepe
+              minus ullam explicabo aut cum quam, mollitia nihil.
+            </p>
+            <div class="plans">
+              <div class="plan">
+                <div class="plan_stripe"></div>
+                <div class="plan_top"></div>
+                <div class="plan_name">PERSONAL</div>
+                <div class="plan_price">$17.99</div>
+                <div class="plan_duration">MONTHLY</div>
+              </div>
+              <div class="plan_middle">
+                <div class="plan_target">For Individuals</div>
+                <div class="plan_feature">30 Templates</div>
+                <div class="plan_feature">7 Landing Pages</div>
+                <div class="plan_feature">12 Internal Pages</div>
+                <div class="plan_feature">Basic Assistance</div>
+              </div>
+              <div class="plan_bottom">
+                <button class="plan_button">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="plan">
+              <div class="plan_stripe"></div>
+              <div class="plan_top">
+                <div class="plan_name">BUSINESS</div>
+                <div class="plan_price">$37.99</div>
+                <div class="plan_duration">MONTHLY</div>
+              </div>
+              <div class="plan_middle">
+                <div class="plan_target">For Small Companies</div>
+                <div class="plan_feature">90 Templates</div>
+                <div class="plan_feature">27 Landing Pages</div>
+                <div class="plan_feature">Personal Assistance</div>
+              </div>
+              <div class="plan_bottom">
+                <button class="plan_button">Buy Now</button>
+              </div>
+            </div>
+
+              <div class="plan">
+                <div class="plan_stripe"></div>
+                <div class="plan_top">
+                  <div class="plan_name">ENTERPRISE</div>
+                  <div class="plan_price">$57.99</div>
+                  <div class="plan_duration">MONTHLY</div>
+                </div>
+                <div class="plan_middle">
+                  <div class="plan_target">For Large Companies</div>
+                  <div class="plan_feature">90 Templates</div>
+                  <div class="plan_feature">27 Landing Pages</div>
+                  <div class="plan_feature">37 Internal Pages</div>
+                  <div class="plan_feature">Personal Assistance</div>
+                </div>
+                <div class="plan_bottom">
+                  <button class="plan_button">Buy Now</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="container">
+          <div class="row">
+            <img
+              src="./assets/undraw_testimonials_4c7y.svg"
+              alt="testimonials"
+              class="testimonials_img"
+            />
+            <div class="testimonials_description">
+              <div class="section_tag">TESTIMONIALS</div>
+              <h2 class="section_title">
+                Our Clients
+                <span class="vivid blue">Love Us.</span>
+              </h2>
+              <p class="section_para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam ut voluptates fuga nulla aliquam fugit voluptatum sunt
+                adipisci? Numquam est amet obcaecati corrupti laudantium quasi
+                sed nesciunt voluptatibus tempora quam? Dolor animi obcaecati
+                odio perspiciatis impedit magnam. Expedita, minima alias!
+              </p>
+              <div class="testimonial">
+                <div class="testimonials_rating">
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </div>
+                <h3 class="testimonial_title">Amazing User Experience</h3>
+                <p class="testimonial_para">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nihil fugit neque aperiam quisquam eaque fuga vitae vero
+                  consequatur, et error dolores, ut eos ipsum porro ea
+                  repudiandae voluptatum reprehenderit maiores quod corrupti,
+                  cum iste tempore optio! Deleniti, voluptate neque. Totam
+                  tempore, ipsum at cupiditate nam voluptates, facere hic
+                  mollitia est beatae maiores esse ipsa accusantium
+                  exercitationem aspernatur adipisci optio nemo labore a
+                  voluptatibus. Iure pariatur eos quaerat magni qui, illum
+                  recusandae atque. Perferendis neque adipisci explicabo, sed
+                  odio voluptas quasi.
+                </p>
+                <div class="testimonials_bottom">
+                  <div class="testimonials_profile">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.VkE7e_a2ZU_7rnbA4difNAHaLG?w=131&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                      alt="Isabella Morgan"
+                      class="testimonial_img"
+                    />
+                    <div class="testimonial_details">
+                      <div class="testimonial_name">Isabella Morgan</div>
+                      <div class="testimonial_role">CEO, BellaCosmetics ©</div>
+                    </div>
+                  </div>
+                  <div class="testimonial_buttons">
+                    <div class="nav-container">
+                      <button class="btn-circle" id="prevBtn">←</button>
+                      <div class="divider"></div>
+                      <button class="btn-circle" id="nextBtn">→</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="start">
+        <div class="container">
+          <div class="row">
+            <div class="start_container">
+              <div class="start_row">
+                <div class="start_title">
+                  Developers all over the world are happily using Venture
+                  Templates.
+                </div>
+                <div class="start_buttons">
+                  <button class="btn btn--primary btn--large">
+                    Get Started
+                  </button>
+                  <button class="btn btn--large">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+    <div class="row footer_row">
+        <div class="footer_columns">
+            <div class="footer_column">
+                <div class="footer_column--title">MAIN</div>
+                <a class="footer_column--link">
+                    Blog
+                </a>
+                <a class="footer_column--link">
+                    FAQs
+                </a>
+                <a class="footer_column--link">
+                    Support
+                </a>
+                <a class="footer_column--link">
+                    About Us
+                </a>
+              </div> 
+                <div class="footer_column">
+                    <div class="footer_column--title">PRODUCTS</div>
+                    <a class="footer_column--link">
+                        Personal Plan
+                    </a>
+                    <a class="footer_column--link">
+                        Business Plan
+                    </a>
+                    <a class="footer_column--link">
+                        Enterprise Plan
+                    </a>
+                    <a class="footer_column--link">
+                        Log In
+                    </a>
+        </div>
+        <div class="footer_column">
+            <div class="footer_column--title">CONTACT</div>
+            <a class="footer_column--link">
+                Contact Us
+            </a>
+            <a class="footer_column--link">
+                Request a Demo
+            </a>
+            <a class="footer_column--link">
+                Careers
+            </a>
+            <a class="footer_column--link">
+                Press
+            </a>
+            </div>
+        <div class="footer_column">
+            <div class="footer_column--title">FOLLOW US</div>
+            <a class="footer_column--link">
+                Facebook
+            </a>
+            <a class="footer_column--link">
+                Twitter
+            </a>
+            <a class="footer_column--link">
+                LinkedIn
+            </a>
+            <a class="footer_column--link">
+                Instagram   
+            </a>    
+        </div>
+        <div class="footer_column">
+            <div class="footer_column--title">NEWSLETTER</div>
+            <p class="footer_newsletter--text">
+                Subscribe to our newsletter to get the latest updates right in your inbox.
+            </p>
+            <div class="footer_newsletter--form">
+                <input type="text" class="footer_newsletter--input" placeholder="Your E-mail Address"/>
+                <button class="footer_newsletter--btn">Subscribe</button>
+            </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <div class="footer_logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 450 120' width='450' height='120'%3E%3Ccircle cx='30' cy='35' r='12' fill='%23ffffff'/%3E%3Crect x='45' y='15' width='14' height='70' rx='7' ry='7' fill='%23ffffff' transform='rotate(25 52 50)'/%3E%3Ctext x='95' y='70' font-family='Arial, sans-serif' font-size='48' font-weight='400' fill='%23ffffff' letter-spacing='-1'%3Eventure%3C/text%3E%3Ctext x='142' y='95' font-family='Arial, sans-serif' font-size='22' font-weight='300' fill='%23ffffff' letter-spacing='2'%3Etemplates inc.%3C/text%3E%3C/svg%3E" alt="Venture Templates Inc." width="450" height="120" alt="footer logo"/>
+
+                </div>
+
+            </div>
+
+    </div>
+    
+   </footer>
   </body>
 </html>
