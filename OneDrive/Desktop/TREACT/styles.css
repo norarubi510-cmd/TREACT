@@ -466,6 +466,14 @@ header {
 
 /* PLANS */
 
+.plans {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
 
 #pricing .container{
     display: flex;
@@ -482,7 +490,7 @@ header {
 
 #pricing .row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -526,7 +534,7 @@ header {
 .plan_price {
   font-size: 32px;
   font-weight: 900;
-  color: linear-gradient(135deg, #2545d7 0%, #770ee0 100%);
+  color:  #4325d7e7;
   margin-bottom: 24px;
   align-items: center;
 }
@@ -681,7 +689,7 @@ header {
 /* START / CTA */
 #start {
   padding: 100px 0;
-  background: white;
+  background: rgba(108, 108, 214, 0.195);
   border-radius: 1px;
 }
 
@@ -753,7 +761,24 @@ footer {
   font-size: larger;
 }
 
-.footer_links {
+.footer_column--title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer_columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.footer_column--link {
   list-style: none;
   display: flex;
   gap: 32px;
@@ -761,14 +786,68 @@ footer {
   margin-bottom: 24px;
 }
 
-.footer_link {
+.footer_column--link {
   text-decoration: none;
   color: white;
   transition: all 0.3s;
 }
 
-.footer_link:hover {
+.footer_column--link:hover {
   text-decoration: underline;
+}
+
+.footer_newsletter--form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+    max-width: 480px;
+    gap: 0;
+    position: relative;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.footer_newsletter--input {
+    padding: 24px 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 16px;
+    flex: 1;
+    align-items: center;
+    }
+
+.footer_newsletter--btn {
+    padding: 14px 45px;
+    border: none;
+    border-radius: 50px;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(100, 21, 255, 0.3);
+    background: #6415ff;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    font-size: medium;
+    transition: all 0.3s;
+    translate: translateY(-50%);
+}
+
+.footer_divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 24px;
+}
+
+.footer_logo--img {
+    width: 225px;
+    height: auto;
+    align-items: center;
 }
 
 
@@ -786,7 +865,7 @@ footer {
   }
 
   .plans {
-    grid-template-columns: 1fr;
+    flex-wrap: wrap;
   }
 
   .start_row {
