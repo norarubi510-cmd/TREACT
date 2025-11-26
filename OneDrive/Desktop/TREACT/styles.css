@@ -961,7 +961,8 @@ footer {
   }
 
   .plans {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .start_row {
@@ -1019,7 +1020,7 @@ footer {
 
 @media (max-width: 1024px) {
     .btn_menu {
-        display: block;
+        display: none;
     }
     header .row {
         flex-direction: column;
