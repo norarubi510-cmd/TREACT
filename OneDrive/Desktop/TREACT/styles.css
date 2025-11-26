@@ -876,9 +876,10 @@ footer {
     align-items: center;
 }
 
-.footer_column--title,
+.footer_newsletter--title,
 .footer_newsletter--text {
     position: relative;
+    left: 45%;
     text-align: center;
 }
 
