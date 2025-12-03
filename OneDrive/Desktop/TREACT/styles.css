@@ -193,7 +193,7 @@ nav {
     margin: 24px 16px;
     padding: 32px;
     background-color: #fff;
-    border: 1px solid rgba(229,231,235);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
     z-index: 4;
     visibility: hidden;
@@ -226,10 +226,11 @@ nav {
 
 .modal_link--primary {
     color: #f7fafc;
-    padding: 10px 38px;
+    padding: 6px 45px;
     background: #6415ff;
     border-radius: 400px;
     border: none;
+    margin-top: 0;
 }
 
 .modal_link--btn:hover {
@@ -249,7 +250,6 @@ nav {
     top: 24px;
     right: 18px;
 }
-
 
 
 /* LANDING / HEADER */
@@ -968,10 +968,14 @@ footer {
     font-size: 28px;
 }
 
+.footer_social-link {
+     color: darkgray;
+}
 
 
 
-/* RESPONSIVE */
+
+/* RESPONSIVENESS */
 @media (max-width: 1024px) {
   .row {
     flex-direction: column;
@@ -1011,10 +1015,6 @@ footer {
     font-size: 32px;
   }
 
-  .nav_links {
-    display: none;
-  }
-
   .features_grid {
     grid-template-columns: 1fr;
   }
@@ -1033,7 +1033,7 @@ footer {
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 1280px) {
     header .row {
         align-items: flex-end;
@@ -1041,9 +1041,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .btn_menu {
-        display: block;
-    }
     header .row {
         flex-direction: column;
         align-items: center;
@@ -1066,24 +1063,14 @@ footer {
     #pricing .row {
         margin-top: 40px;
     }
-    
-}
 
-@media (max-width: 640px) {
-    .container {
-        padding: 80px 0;
+    .btn_menu {
+        display: block;
     }
-    .nav_logo {
-        margin: 8px 0;
-        padding-bottom: 4px;
-    }
-    main {
-        margin-bottom: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-  /* Center Newsletter on Mobile & Tablet */
+     
+     .nav_links {
+    display: none;
+  }
   .footer_column:last-child {
     text-align: center;
   }
@@ -1100,6 +1087,21 @@ footer {
     margin-right: auto;
     max-width: 100%;
   }
+    
 }
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+    .nav_logo {
+        margin: 8px 0;
+        padding-bottom: 4px;
+    }
+    main {
+        margin-bottom: 80px;
+    }
+}
+
 
 
